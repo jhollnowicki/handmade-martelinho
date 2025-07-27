@@ -1,0 +1,176 @@
+{
+  "hero": {
+    "titulo1": "Seu carro como novo,",
+    "titulo2": "sem sair de casa",
+    "subtitulo": "Especialistas em Martelinho de Ouro com",
+    "subtitulo_destaque": "atendimento a domicílio",
+    "botao": "Agendar Avaliação Gratuita",
+    "itens": "✓ Avaliação gratuita • ✓ Atendimento a domicílio • ✓ Sem pintura"
+  },
+  "about": {
+    "titulo": "Quem Somos",
+    "descricao": "A Handmade Martelinho de Ouro é especializada em reparos automotivos de alta qualidade, focando na excelência e atenção aos detalhes. Nossa missão é devolver a beleza original do seu veículo através de técnicas avançadas de martelinho de ouro, sem comprometer a pintura original.",
+    "feature1": {
+      "title": "Experiência Comprovada",
+      "desc": "Anos de experiência em reparos automotivos de alta qualidade"
+    },
+    "feature2": {
+      "title": "Atendimento Personalizado",
+      "desc": "Cada cliente recebe atenção especial e cuidado único"
+    },
+    "feature3": {
+      "title": "Acabamento Impecável",
+      "desc": "Resultado perfeito sem comprometer a pintura original"
+    },
+    "feature4": {
+      "title": "Rapidez e Conveniência",
+      "desc": "Atendimento a domicílio com horários flexíveis"
+    },
+    "promessa": {
+      "titulo": "Nossa Promessa",
+      "texto": "Trabalhamos com profissionalismo e paixão pelo que fazemos, garantindo que cada reparo seja executado com a máxima precisão. Nosso compromisso é entregar um acabamento impecável que supere suas expectativas.",
+      "item1": "Atendimento humanizado",
+      "item2": "Técnicas avançadas",
+      "item3": "Resultados duradouros"
+    }
+  },
+  "services": {
+    "titulo": "Nossos Serviços",
+    "subtitulo": "Especializados em martelinho de ouro, oferecemos reparos automotivos de alta qualidade com foco na preservação da pintura original.",
+    "card1": {
+      "title": "Remoção de Amassados",
+      "desc": "Eliminação precisa de amassados pequenos e médios sem danificar a pintura original do veículo."
+    },
+    "card2": {
+      "title": "Reparo sem Pintura",
+      "desc": "Técnica especializada que preserva 100% da pintura de fábrica, mantendo a originalidade."
+    },
+    "card3": {
+      "title": "Serviço Rápido",
+      "desc": "Reparos executados com agilidade, sem comprometer a qualidade do acabamento final."
+    },
+    "card4": {
+      "title": "Acabamento Premium",
+      "desc": "Resultado impecável com atenção aos mínimos detalhes, superando expectativas."
+    },
+    "destaqueTitulo": "Trabalhamos com precisão milimétrica, devolvendo o visual original do seu veículo.",
+    "destaqueTexto": "Nossa técnica avançada de martelinho de ouro garante reparos rápidos e duradouros, sem afetar a pintura original. Cada detalhe é cuidadosamente trabalhado para entregar um resultado que supera as expectativas.",
+    "etapas": {
+      "titulo": "Como Funciona Nosso Processo",
+      "e1": {
+        "titulo": "Avaliação",
+        "desc": "Análise detalhada do dano e definição da melhor técnica de reparo."
+      },
+      "e2": {
+        "titulo": "Execução",
+        "desc": "Aplicação da técnica de martelinho de ouro com precisão e cuidado."
+      },
+      "e3": {
+        "titulo": "Entrega",
+        "desc": "Veículo finalizado com acabamento impecável e pintura preservada."
+      }
+    }
+  },
+  "contact": {
+    "title": "Solicite sua Avaliação",
+    "subtitle1": "Solicite uma avaliação gratuita, onde você estiver!",
+    "subtitle2": "Nossa equipe especializada vai até você para analisar o reparo e apresentar a melhor solução.",
+    "formError": "Por favor, preencha pelo menos o nome e telefone.",
+    "formSuccess": "Redirecionando para o WhatsApp...",
+    "whatsappIntro": "Olá! Gostaria de solicitar uma avaliação gratuita:",
+    "whatsappOutro": "Aguardo retorno para agendarmos a avaliação!",
+    "notProvided": "Não informado",
+    "defaultMessage": "Gostaria de mais informações sobre os serviços.",
+    "nameLabel": "Nome Completo *",
+    "namePlaceholder": "Seu nome completo",
+    "phoneLabel": "Telefone/WhatsApp *",
+    "phonePlaceholder": "(xx) xxxxx-xxxx",
+    "cityLabel": "Cidade",
+    "cityPlaceholder": "Sua cidade / Bairro",
+    "messageLabel": "Mensagem",
+    "messagePlaceholder": "Descreva o problema do seu veículo ou tire suas dúvidas...",
+    "sendButton": "Enviar via WhatsApp",
+    "section1.title": "Fale Conosco",
+    "section2.title": "Atendimento Imediato",
+    "section2.text": "Entre em contato conosco pelo WhatsApp para um atendimento rápido e personalizado.",
+    "section3.title": "Atendimento a Domicílio",
+    "section3.text": "Levamos nossos serviços até você! Atendemos toda a região metropolitana com a mesma qualidade e profissionalismo.",
+    "section4.title": "Horário de Funcionamento",
+    "section4.week": "Segunda a Sexta: 08h às 18h",
+    "section4.saturday": "Sábado: 08h às 14h",
+    "section4.sunday": "Domingo: Emergências",
+    "highlight.title": "✓ Avaliação 100% Gratuita",
+    "highlight.text": "Não cobramos nada pela análise inicial. Você só paga se aprovar o serviço!"
+  },
+  "footer": {
+  "empresa": {
+    "titulo": "Handmade",
+    "subtitulo": "Martelinho de Ouro",
+    "descricao": "Especialistas em reparos automotivos sem pintura. Atendimento a domicílio com qualidade profissional e acabamento impecável.",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram"
+  },
+  "links": {
+    "titulo": "Links Rápidos",
+    "home": "Home",
+    "quem_somos": "Quem Somos",
+    "servicos": "Serviços",
+    "galeria": "Galeria",
+    "contato": "Contato"
+  },
+  "contato": {
+    "titulo": "Contato",
+    "telefone": "(41) 99506-3859",
+    "email": "handmade.martelinhodeouro@gmail.com",
+    "endereco": "Atendimento em toda região metropolitana"
+  },
+  "rodape": {
+    "frase": "Handmade Martelinho de Ouro – Excelência em cada detalhe.",
+    "direitos": "© 2024 Handmade Martelinho de Ouro. Todos os direitos reservados.",
+    "topo": "Voltar ao topo"
+  }
+},
+"gallery": {
+  "titulo": "Galeria Antes e Depois",
+  "descricao": "Veja a transformação incrível que nossos especialistas conseguem alcançar. Cada reparo é executado com <strong>precisão e cuidado</strong>, preservando a pintura original e devolvendo a beleza do seu veículo.",
+  "antes": "ANTES",
+  "depois": "DEPOIS",
+  "itens": [
+    {
+      "titulo": "Capô do Motor",
+      "descricao": "Amassado removido completamente preservando a pintura original"
+    },
+    {
+      "titulo": "Porta do Porta Malas",
+      "descricao": "Restauração perfeita sem necessidade de pintura"
+    },
+    {
+      "titulo": "Capô Motor",
+      "descricao": "Técnica precisa devolveu o formato original"
+    },
+    {
+      "titulo": "Reparo no Para-Lamas",
+      "descricao": "Resultado impecável com acabamento profissional"
+    }
+  ],
+  "features": [
+    {
+      "icone": "✨",
+      "titulo": "Brilho Original",
+      "descricao": "Preservamos o brilho e a textura da pintura de fábrica"
+    },
+    {
+      "icone": "🎯",
+      "titulo": "Alinhamento Perfeito",
+      "descricao": "Cada linha e curva restaurada com precisão milimétrica"
+    },
+    {
+      "icone": "👑",
+      "titulo": "Perfeição Final",
+      "descricao": "Resultado que supera as expectativas mais exigentes"
+    }
+  ]
+}
+
+
+}

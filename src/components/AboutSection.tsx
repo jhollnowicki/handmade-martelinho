@@ -1,28 +1,31 @@
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Users, Award, Clock } from 'lucide-react';
 
 const AboutSection = () => {
+  const { t } = useTranslation();
+
   const features = [
     {
       icon: <Award className="h-8 w-8 text-primary" />,
-      title: "Experiência Comprovada",
-      description: "Anos de experiência em reparos automotivos de alta qualidade"
+      title: t('about.feature1.title'),
+      description: t('about.feature1.desc'),
     },
     {
       icon: <Users className="h-8 w-8 text-primary" />,
-      title: "Atendimento Personalizado",
-      description: "Cada cliente recebe atenção especial e cuidado único"
+      title: t('about.feature2.title'),
+      description: t('about.feature2.desc'),
     },
     {
       icon: <CheckCircle className="h-8 w-8 text-primary" />,
-      title: "Acabamento Impecável",
-      description: "Resultado perfeito sem comprometer a pintura original"
+      title: t('about.feature3.title'),
+      description: t('about.feature3.desc'),
     },
     {
       icon: <Clock className="h-8 w-8 text-primary" />,
-      title: "Rapidez e Conveniência",
-      description: "Atendimento a domicílio com horários flexíveis"
-    }
+      title: t('about.feature4.title'),
+      description: t('about.feature4.desc'),
+    },
   ];
 
   return (
@@ -30,14 +33,11 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Quem Somos
+            {t('about.titulo')}
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-lg md:text-xl text-brand-gray max-w-3xl mx-auto leading-relaxed">
-            A <strong>Handmade Martelinho de Ouro</strong> é especializada em reparos automotivos 
-            de alta qualidade, focando na <strong>excelência e atenção aos detalhes</strong>. 
-            Nossa missão é devolver a beleza original do seu veículo através de técnicas 
-            avançadas de martelinho de ouro, <strong>sem comprometer a pintura original</strong>.
+            {t('about.descricao')}
           </p>
         </div>
 
@@ -62,27 +62,23 @@ const AboutSection = () => {
         <div className="text-center">
           <div className="bg-background rounded-lg p-8 shadow-md max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-              Nossa Promessa
+              {t('about.promessa.titulo')}
             </h3>
             <p className="text-lg text-brand-gray leading-relaxed mb-6">
-              Trabalhamos com <strong className="text-primary">profissionalismo</strong> e 
-              <strong className="text-primary"> paixão pelo que fazemos</strong>, garantindo 
-              que cada reparo seja executado com a máxima precisão. Nosso compromisso é 
-              entregar um <strong className="text-primary">acabamento impecável</strong> que 
-              supere suas expectativas.
+              {t('about.promessa.texto')}
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-brand-gray">
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-5 w-5 text-primary" />
-                <span>Atendimento humanizado</span>
+                <span>{t('about.promessa.item1')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-5 w-5 text-primary" />
-                <span>Técnicas avançadas</span>
+                <span>{t('about.promessa.item2')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-5 w-5 text-primary" />
-                <span>Resultados duradouros</span>
+                <span>{t('about.promessa.item3')}</span>
               </div>
             </div>
           </div>

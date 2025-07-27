@@ -5,8 +5,11 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from '@/components/ui/card';
 import { MessageSquare, Phone, MapPin, Clock } from 'lucide-react';
 import { toast } from 'sonner';
+import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     nome: '',
     telefone: '',
@@ -24,29 +27,27 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.nome || !formData.telefone) {
-      toast.error('Por favor, preencha pelo menos o nome e telefone.');
+      toast.error(t('contact.formError'));
       return;
     }
 
-    // Formatando mensagem para WhatsApp
-    const message = `Olá! Gostaria de solicitar uma avaliação gratuita:
-    
-📝 *Nome:* ${formData.nome}
-📱 *Telefone:* ${formData.telefone}
-📍 *Cidade:* ${formData.cidade || 'Não informado'}
-💬 *Mensagem:* ${formData.mensagem || 'Gostaria de mais informações sobre os serviços.'}
+    const message = `${t('contact.whatsappIntro')}
 
-Aguardo retorno para agendarmos a avaliação!`;
+📝 *${t('contact.nameLabel')}* ${formData.nome}
+📱 *${t('contact.phoneLabel')}* ${formData.telefone}
+📍 *${t('contact.cityLabel')}* ${formData.cidade || t('contact.notProvided')}
+💬 *${t('contact.messageLabel')}* ${formData.mensagem || t('contact.defaultMessage')}
+
+${t('contact.whatsappOutro')}`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodedMessage}`;
-    
+    const whatsappUrl = `https://wa.me/5541995063859?text=${encodedMessage}`;
+
     window.open(whatsappUrl, '_blank');
-    toast.success('Redirecionando para o WhatsApp...');
-    
-    // Limpar formulário
+    toast.success(t('contact.formSuccess'));
+
     setFormData({
       nome: '',
       telefone: '',
@@ -60,32 +61,29 @@ Aguardo retorno para agendarmos a avaliação!`;
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Solicite sua Avaliação
+            {t('contact.title')}
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-lg md:text-xl text-brand-gray max-w-3xl mx-auto leading-relaxed">
-            <strong>Solicite uma avaliação gratuita, onde você estiver!</strong>
-            <br />
-            Nossa equipe especializada vai até você para analisar o reparo 
-            e apresentar a melhor solução.
+            <strong>{t('contact.subtitle1')}</strong><br />
+            {t('contact.subtitle2')}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Formulário */}
           <Card className="shadow-lg border-0">
             <CardContent className="p-8">
               <div className="flex items-center gap-3 mb-6">
                 <MessageSquare className="h-6 w-6 text-primary" />
                 <h3 className="text-2xl font-bold text-foreground">
-                  Fale Conosco
+                  {t('contact.section1.title')}
                 </h3>
               </div>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="nome" className="block text-sm font-medium text-foreground mb-2">
-                    Nome Completo *
+                    {t('contact.nameLabel')}
                   </label>
                   <Input
                     id="nome"
@@ -93,7 +91,7 @@ Aguardo retorno para agendarmos a avaliação!`;
                     type="text"
                     value={formData.nome}
                     onChange={handleInputChange}
-                    placeholder="Seu nome completo"
+                    placeholder={t('contact.namePlaceholder')}
                     required
                     className="w-full"
                   />
@@ -101,7 +99,7 @@ Aguardo retorno para agendarmos a avaliação!`;
 
                 <div>
                   <label htmlFor="telefone" className="block text-sm font-medium text-foreground mb-2">
-                    Telefone/WhatsApp *
+                    {t('contact.phoneLabel')}
                   </label>
                   <Input
                     id="telefone"
@@ -109,7 +107,7 @@ Aguardo retorno para agendarmos a avaliação!`;
                     type="tel"
                     value={formData.telefone}
                     onChange={handleInputChange}
-                    placeholder="(11) 99999-9999"
+                    placeholder={t('contact.phonePlaceholder')}
                     required
                     className="w-full"
                   />
@@ -117,7 +115,7 @@ Aguardo retorno para agendarmos a avaliação!`;
 
                 <div>
                   <label htmlFor="cidade" className="block text-sm font-medium text-foreground mb-2">
-                    Cidade
+                    {t('contact.cityLabel')}
                   </label>
                   <Input
                     id="cidade"
@@ -125,21 +123,21 @@ Aguardo retorno para agendarmos a avaliação!`;
                     type="text"
                     value={formData.cidade}
                     onChange={handleInputChange}
-                    placeholder="Sua cidade"
+                    placeholder={t('contact.cityPlaceholder')}
                     className="w-full"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="mensagem" className="block text-sm font-medium text-foreground mb-2">
-                    Mensagem
+                    {t('contact.messageLabel')}
                   </label>
                   <Textarea
                     id="mensagem"
                     name="mensagem"
                     value={formData.mensagem}
                     onChange={handleInputChange}
-                    placeholder="Descreva o problema do seu veículo ou tire suas dúvidas..."
+                    placeholder={t('contact.messagePlaceholder')}
                     rows={4}
                     className="w-full resize-none"
                   />
@@ -149,28 +147,26 @@ Aguardo retorno para agendarmos a avaliação!`;
                   type="submit"
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 text-lg font-semibold"
                 >
-                  Enviar via WhatsApp
+                  {t('contact.sendButton')}
                 </Button>
               </form>
             </CardContent>
           </Card>
 
-          {/* Informações de Contato */}
           <div className="space-y-8">
             <Card className="border-0 bg-brand-blue-light">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Phone className="h-6 w-6 text-primary" />
                   <h4 className="text-xl font-semibold text-foreground">
-                    Atendimento Imediato
+                    {t('contact.section2.title')}
                   </h4>
                 </div>
                 <p className="text-brand-gray mb-3">
-                  Entre em contato conosco pelo WhatsApp para um atendimento 
-                  rápido e personalizado.
+                  {t('contact.section2.text')}
                 </p>
                 <Button 
-                  onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
+                  onClick={() => window.open('https://wa.me/5541995063859', '_blank')}
                   variant="outline" 
                   className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                 >
@@ -184,12 +180,11 @@ Aguardo retorno para agendarmos a avaliação!`;
                 <div className="flex items-center gap-3 mb-4">
                   <MapPin className="h-6 w-6 text-primary" />
                   <h4 className="text-xl font-semibold text-foreground">
-                    Atendimento a Domicílio
+                    {t('contact.section3.title')}
                   </h4>
                 </div>
                 <p className="text-brand-gray">
-                  Levamos nossos serviços até você! Atendemos toda a região 
-                  metropolitana com a mesma qualidade e profissionalismo.
+                  {t('contact.section3.text')}
                 </p>
               </CardContent>
             </Card>
@@ -199,25 +194,23 @@ Aguardo retorno para agendarmos a avaliação!`;
                 <div className="flex items-center gap-3 mb-4">
                   <Clock className="h-6 w-6 text-primary" />
                   <h4 className="text-xl font-semibold text-foreground">
-                    Horário de Funcionamento
+                    {t('contact.section4.title')}
                   </h4>
                 </div>
                 <div className="space-y-2 text-brand-gray">
-                  <p><strong>Segunda a Sexta:</strong> 08h às 18h</p>
-                  <p><strong>Sábado:</strong> 08h às 14h</p>
-                  <p><strong>Domingo:</strong> Emergências</p>
+                  <p>{t('contact.section4.week')}</p>
+                  <p>{t('contact.section4.saturday')}</p>
+                  <p>{t('contact.section4.sunday')}</p>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Destaque */}
             <div className="bg-primary text-primary-foreground rounded-lg p-6 text-center">
               <h4 className="text-xl font-bold mb-3">
-                ✓ Avaliação 100% Gratuita
+                {t('contact.highlight.title')}
               </h4>
               <p className="text-primary-foreground/90">
-                Não cobramos nada pela análise inicial. 
-                Você só paga se aprovar o serviço!
+                {t('contact.highlight.text')}
               </p>
             </div>
           </div>
