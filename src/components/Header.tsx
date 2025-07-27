@@ -40,13 +40,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
-          <div className="flex items-center 2xl:ml-[-100px]">
-            <img
-              src={logoNovo}
-              alt="Handmade Martelinho de Ouro"
-              className="h-12 sm:h-14 lg:h-20 w-auto"
-            />
-          </div>
+          <img
+            src={logoNovo}
+            alt="Handmade Martelinho de Ouro"
+            className="h-[60px] sm:h-[72px] lg:h-[96px] w-auto"
+          />
+
 
 
           {/* Desktop Navigation */}
