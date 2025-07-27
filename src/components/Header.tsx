@@ -37,16 +37,16 @@ const Header = () => {
         : 'bg-transparent'
         }`}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20 lg:h-24">
-          {/* Logo */}
-          <img
-            src={logoNovo}
-            alt="Handmade Martelinho de Ouro"
-            className="h-[60px] sm:h-[72px] lg:h-[96px] w-auto"
-          />
+      <div className="px-4">
+        <div className="container mx-auto flex items-center justify-between h-20 lg:h-24">
 
-
+          <div className="ml-0 lg:ml-[-40px] xl:ml-[-60px]">
+            <img
+              src={logoNovo}
+              alt="Handmade Martelinho de Ouro"
+              className="h-[60px] sm:h-[72px] lg:h-[96px] w-auto"
+            />
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
