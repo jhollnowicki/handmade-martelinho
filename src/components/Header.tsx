@@ -68,55 +68,51 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           {/* Mobile Menu Button (100% à direita no mobile) */}
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 md:hidden">
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 md:hidden z-50">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 text-foreground hover:text-primary transition-colors"
+              className={`p-2 transition-all transform ${isMobileMenuOpen
+                ? 'text-blue-600 hover:text-blue-700 hover:scale-110'
+                : 'text-white hover:text-primary hover:scale-110'
+                }`}
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
-        
 
+          {/* Mobile Navigation */}
+          {isMobileMenuOpen && (
+            <div className="fixed top-0 left-2 w-[70%] max-w-[240px] h-[70%] bg-white shadow-2xl rounded-r-2xl z-50 flex flex-col border border-gray-200 overflow-hidden">
 
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-background border-t border-border">
-            <nav className="flex flex-col space-y-4 py-4">
-              <button onClick={() => scrollToSection('home')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">
-                Home
-              </button>
-              <button onClick={() => scrollToSection('quem-somos')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">
-                Quem Somos
-              </button>
-              <button onClick={() => scrollToSection('servicos')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">
-                Serviços
-              </button>
-              <button onClick={() => scrollToSection('galeria')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">
-                Galeria
-              </button>
-              <>
-                <button
-                  onClick={() => i18n.changeLanguage('pt')}
-                  className={`${linkClass} px-4 py-2 text-left`}
-                >
+              {/* Menu de navegação */}
+              <nav className="flex flex-col space-y-2 px-6 py-6">
+                <button onClick={() => scrollToSection('home')} className="text-left py-2 text-gray-800 hover:text-blue-600">
+                  Home
+                </button>
+                <button onClick={() => scrollToSection('quem-somos')} className="text-left py-2 text-gray-800 hover:text-blue-600">
+                  Quem Somos
+                </button>
+                <button onClick={() => scrollToSection('servicos')} className="text-left py-2 text-gray-800 hover:text-blue-600">
+                  Serviços
+                </button>
+                <button onClick={() => scrollToSection('galeria')} className="text-left py-2 text-gray-800 hover:text-blue-600">
+                  Galeria
+                </button>
+                <button onClick={() => i18n.changeLanguage('pt')} className="text-left py-2 text-gray-800 hover:text-blue-600">
                   Português
                 </button>
-                <button
-                  onClick={() => i18n.changeLanguage('en')}
-                  className={`${linkClass} px-4 py-2 text-left`}
-                >
+                <button onClick={() => i18n.changeLanguage('en')} className="text-left py-2 text-gray-800 hover:text-blue-600">
                   English
                 </button>
-              </>
-              <button onClick={() => scrollToSection('contato')} className="text-left px-4 py-2 text-foreground hover:text-primary transition-colors">
-                Contato
-              </button>
-            </nav>
-          </div>
-        )}
+                <button onClick={() => scrollToSection('contato')} className="text-left py-2 text-gray-800 hover:text-blue-600">
+                  Contato
+                </button>
+              </nav>
+            </div>
+          )}
+
+        </div>
       </div>
-    </div>
     </header >
   );
 };
