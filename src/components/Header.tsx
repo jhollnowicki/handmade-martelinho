@@ -36,7 +36,7 @@ const Header = () => {
     >
       <div className="px-20">
         <div className="w-full flex items-center justify-between h-20 lg:h-24 px-4 lg:px-6">
-          
+          {/* Logo alinhada à esquerda */}
           <div className="ml-[-16px] sm:ml-[-24px] md:ml-[-32px] lg:ml-[-48px] xl:ml-[-64px]">
             <img
               src={logoNovo}
@@ -67,13 +67,17 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
-          >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
-        </div>
+          {/* Mobile Menu Button (100% à direita no mobile) */}
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 md:hidden">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 text-foreground hover:text-primary transition-colors"
+            >
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
+        
+
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
@@ -112,7 +116,8 @@ const Header = () => {
           </div>
         )}
       </div>
-    </header>
+    </div>
+    </header >
   );
 };
 
