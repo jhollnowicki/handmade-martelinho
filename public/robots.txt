@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://handmade-martelino.netlify.app/sitemap.xml
