@@ -1,0 +1,169 @@
+{
+  "hero": {
+    "titulo1": "Your car like new,",
+    "titulo2": "without leaving home",
+    "subtitulo": "Experts in Paintless Dent Repair with",
+    "subtitulo_destaque": "home service",
+    "botao": "Schedule Free Evaluation",
+    "itens": "✓ Free evaluation • ✓ Home service • ✓ No paint required"
+  },
+  "about": {
+    "titulo": "About Us",
+    "descricao": "Handmade Martelinho de Ouro specializes in high-quality automotive repairs, focusing on excellence and attention to detail. Our mission is to restore your vehicle’s original beauty using advanced dent repair techniques without damaging the original paint.",
+    "feature1": {
+      "title": "Proven Experience",
+      "desc": "Years of experience in high-quality automotive repairs"
+    },
+    "feature2": {
+      "title": "Personalized Service",
+      "desc": "Every customer receives special attention and care"
+    },
+    "feature3": {
+      "title": "Flawless Finish",
+      "desc": "Perfect result without affecting the original paint"
+    },
+    "feature4": {
+      "title": "Speed and Convenience",
+      "desc": "Home service with flexible hours"
+    },
+    "promessa": {
+      "titulo": "Our Promise",
+      "texto": "We work with professionalism and passion for what we do, ensuring that each repair is carried out with maximum precision. Our commitment is to deliver a flawless finish that exceeds your expectations.",
+      "item1": "Humanized service",
+      "item2": "Advanced techniques",
+      "item3": "Long-lasting results"
+    }
+  },
+  "services": {
+    "titulo": "Our Services",
+    "subtitulo": "Specialized in paintless dent repair, we offer high-quality automotive repairs with a focus on preserving the original paint.",
+    "card1": {
+      "title": "Dent Removal",
+      "desc": "Precise removal of small and medium dents without damaging the original paint."
+    },
+    "card2": {
+      "title": "Paintless Repair",
+      "desc": "Specialized technique that preserves 100% of the factory paint, maintaining originality."
+    },
+    "card3": {
+      "title": "Quick Service",
+      "desc": "Repairs carried out quickly without compromising final finish quality."
+    },
+    "card4": {
+      "title": "Premium Finish",
+      "desc": "Impeccable results with attention to the smallest details, exceeding expectations."
+    },
+    "destaqueTitulo": "We work with millimetric precision, restoring your vehicle's original look.",
+    "destaqueTexto": "Our advanced paintless dent repair technique guarantees fast and durable results without affecting the original paint. Every detail is carefully handled to deliver results that exceed expectations.",
+    "etapas": {
+      "titulo": "How Our Process Works",
+      "e1": {
+        "titulo": "Evaluation",
+        "desc": "Detailed analysis of the damage and definition of the best repair technique."
+      },
+      "e2": {
+        "titulo": "Execution",
+        "desc": "Application of the paintless dent repair technique with precision and care."
+      },
+      "e3": {
+        "titulo": "Delivery",
+        "desc": "Vehicle delivered with flawless finish and original paint preserved."
+      }
+    }
+  },
+  "contact": {
+    "title": "Request Your Evaluation",
+    "subtitle1": "Request a free evaluation, wherever you are!",
+    "subtitle2": "Our specialized team will come to you to assess the repair and present the best solution.",
+    "nameLabel": "Full Name *",
+    "phoneLabel": "Phone/WhatsApp *",
+    "cityLabel": "City",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Describe the issue with your vehicle or ask your questions...",
+    "sendButton": "Send via WhatsApp",
+    "formError": "Please fill in at least your name and phone.",
+    "formSuccess": "Redirecting to WhatsApp...",
+    "section1.title": "Contact Us",
+    "section2.title": "Immediate Service",
+    "section2.text": "Contact us via WhatsApp for fast and personalized service.",
+    "section3.title": "Home Service",
+    "section3.text": "We bring our services to you! We serve the entire metropolitan region with the same quality and professionalism.",
+    "section4.title": "Business Hours",
+    "section4.week": "Monday to Friday: 08:00 to 18:00",
+    "section4.saturday": "Saturday: 08:00 to 14:00",
+    "section4.sunday": "Sunday: Emergencies",
+    "highlight.title": "✓ 100% Free Evaluation",
+    "highlight.text": "We charge nothing for the initial analysis. You only pay if you approve the service!"
+  },
+  "footer": {
+  "empresa": {
+    "titulo": "Handmade",
+    "subtitulo": "Paintless Dent Repair",
+    "descricao": "Experts in paintless automotive repairs. Home service with professional quality and flawless finish.",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram"
+  },
+  "links": {
+    "titulo": "Quick Links",
+    "home": "Home",
+    "quem_somos": "About Us",
+    "servicos": "Services",
+    "galeria": "Gallery",
+    "contato": "Contact"
+  },
+  "contato": {
+    "titulo": "Contact",
+    "telefone": "(41) 99506-3859",
+    "email": "handmade.martelinhodeouro@gmail.com",
+    "endereco": "Service in Curitiba and the entire metropolitan region"
+  },
+  "rodape": {
+    "frase": "Handmade Paintless Dent Repair – Excellence in every detail.",
+    "direitos": "© 2024 Handmade Paintless Dent Repair. All rights reserved.",
+    "topo": "Back to top"
+  }
+},
+"gallery": {
+  "titulo": "Before and After Gallery",
+  "descricao": "See the amazing transformation our specialists can achieve. Every repair is carried out with <strong>precision and care</strong>, preserving the original paint and restoring your vehicle’s beauty.",
+  "antes": "BEFORE",
+  "depois": "AFTER",
+  "itens": [
+    {
+      "titulo": "Engine Hood",
+      "descricao": "Dent completely removed while preserving the original paint"
+    },
+    {
+      "titulo": "Trunk Door",
+      "descricao": "Perfect restoration with no need for paint"
+    },
+    {
+      "titulo": "Hail Damage Repair",
+      "descricao": "Precise technique restored the original shape"
+    },
+    {
+      "titulo": "Fender Repair",
+      "descricao": "Impeccable result with professional finish"
+    }
+  ],
+  "features": [
+    {
+      "icone": "✨",
+      "titulo": "Original Shine",
+      "descricao": "We preserve the original factory paint’s shine and texture"
+    },
+    {
+      "icone": "🎯",
+      "titulo": "Perfect Alignment",
+      "descricao": "Every line and curve restored with millimetric precision"
+    },
+    {
+      "icone": "👑",
+      "titulo": "Final Perfection",
+      "descricao": "Results that exceed the highest expectations"
+    }
+  ]
+}
+
+
+}
