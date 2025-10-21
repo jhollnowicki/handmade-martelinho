@@ -101,23 +101,23 @@ const Footer = () => {
           </div>
 
           {/* Contato — alinhado corretamente */}
-<div>
-  <h4 className="text-lg font-semibold mb-4">{t('footer.contato.titulo')}</h4>
-  <div className="space-y-3">
-    <div className="flex items-center space-x-3">
-      <MessageCircle className="h-5 w-5 text-gray-300 shrink-0" />
-      <span className="text-gray-300">{t('footer.contato.telefone')}</span>
-    </div>
-    <div className="flex items-center space-x-3">
-      <Mail className="h-5 w-5 text-gray-300 shrink-0" />
-      <span className="text-gray-300 break-all">{t('footer.contato.email')}</span>
-    </div>
-    <div className="flex items-start space-x-3">
-      <MapPin className="h-5 w-5 text-gray-300 shrink-0 mt-1" />
-      <span className="text-gray-300">{t('footer.contato.endereco')}</span>
-    </div>
-  </div>
-</div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.contato.titulo')}</h4>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <MessageCircle className="h-5 w-5 text-gray-300 shrink-0" />
+                <span className="text-gray-300">{t('footer.contato.telefone')}</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="h-5 w-5 text-gray-300 shrink-0" />
+                <span className="text-gray-300 break-all">{t('footer.contato.email')}</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <MapPin className="h-5 w-5 text-gray-300 shrink-0 mt-1" />
+                <span className="text-gray-300">{t('footer.contato.endereco')}</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Linha divisória */}
@@ -131,7 +131,7 @@ const Footer = () => {
             {/* Linha inferior com © e NOWITECH */}
             <div className="flex flex-col items-center gap-1 md:flex-row md:items-center md:gap-3 text-gray-300 text-sm">
               <span className="text-center md:text-left">
-                © 2024 Handmade Martelinho de Ouro. Todos os direitos reservados.
+                © {new Date().getFullYear()} Handmade Martelinho de Ouro. Todos os direitos reservados.
               </span>
 
               {/* separador no desktop */}
@@ -139,9 +139,15 @@ const Footer = () => {
 
               <span className="flex items-center gap-1 whitespace-nowrap">
                 <span>Desenvolvido por</span>
-                <span className="text-primary font-bold inline-flex items-center gap-1">
+                <a
+                  href="https://nowitech.netlify.app?utm_source=handmade&utm_medium=rodape&utm_campaign=portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visitar o site da NOWITECH"
+                  className="text-primary font-bold inline-flex items-center gap-1 hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-primary/50 rounded-sm transition"
+                >
                   NOWITECH <Laptop className="w-4 h-4" />
-                </span>
+                </a>
               </span>
             </div>
 
